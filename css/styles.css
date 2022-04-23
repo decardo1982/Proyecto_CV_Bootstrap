@@ -98,7 +98,7 @@ hr {
 }
 
 hr:not([size]) {
-  height: 1px;
+  height: 2px;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -11400,7 +11400,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #000066;
 }
 
 .dev-icons {
