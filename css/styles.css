@@ -7715,7 +7715,9 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color:#000066 !important;
+
+  /*color:#000066 !important;*/
+  color: #312361 !important;
 }
 
 .text-secondary {
@@ -7806,7 +7808,8 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #000066 !important;
+  background-color: #312361 !important;
+  /*background-image: linear-gradient(#312361, #2DF8E2);*/ 
 }
 
 .bg-secondary {
@@ -11386,18 +11389,20 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #312361;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
   margin-top: 1.5rem;
+  transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
   background-color: #000066;
+  transform: scale(1.1); /* Aumenta el tamaño en un 10% al pasar el mouse */
 }
 
 .dev-icons {
@@ -11479,16 +11484,24 @@ section.resume-section .resume-section-content {
   padding: 16px 32px;
 }
 
+
+
 .carrusel{
   display: flex;
   flex-wrap: nowrap;
   overflow: scroll;
 }
+.list-inline-item {
+  text-align: center;
+  margin: 0 10px; /* Ajusta el espaciado según sea necesario */
+}
 
-.elemento{
-  flex: 1 0 auto;
-  margin: 0 50px;
-  background-color: #0dcaf0;
-  width: 500px;
-  height: 500px;
+.list-inline-item i {
+  margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+  display: block; /* Hace que el ícono se comporte como un bloque, permitiendo que el texto se centre debajo de él */
+}
+
+.list-inline-item span {
+  display: block; /* Asegura que el texto se centre directamente debajo del ícono */
+  font-size: 0.75rem; /* Ajusta el tamaño del texto según sea necesario */
 }
